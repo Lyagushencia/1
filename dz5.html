@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <style>
+           th { background:  rgb(122, 228, 119); }
+           table, th, td {border: 1px solid rgb(0, 0, 0); border-collapse: collapse; }
+        </style>
+        <!--заливка заголовков и границы между ячейками с помощью тега style-->
+        <title>Таблица</title>
+    </head>
+    <body>
+        <table>
+            <caption>Расписание занятий</caption>
+            <thead>
+                <tr>
+                    <th>день недели</th>
+                    <th>время</th>
+                    <th>предмет</th>
+                    <th>номер аудитории</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3">ПН</th>
+                    <td>8.00</td>
+                    <td>Программирование</td>
+                    <td>1</td>
+                </tr>
+                <!--тег rowspan для объединения ячеек использован, чтобы распространить значение из первой строки на три строки-->
+                <tr>
+                    <td>9.30</td>
+                    <td>Мат.логика</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>11.30</td>
+                    <td>Английский</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">ВТ</th>
+                    <td>9.30</td>
+                    <td>Высш.математика</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>11.30</td>
+                    <td>Программирование</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">СР</th>
+                    <td>9.30</td>
+                    <td>Высш.математика</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                     <td>11.30</td>
+                     <td>Физкультура</td>
+                     <td>5</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">ЧТ</th>
+                    <td>8.00</td>
+                    <td>Программирование</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>9.30</td>
+                    <td>Математика</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>11.30</td>
+                    <td>Физика</td>
+                    <td>6</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Примечание: расписание может измениться из-за праздников</td>
+                    <!--тег colspan применен для объединения столбцов, чтобы вместить текст-->
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
